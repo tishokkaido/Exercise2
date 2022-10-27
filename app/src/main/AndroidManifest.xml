@@ -24,6 +24,8 @@
         </activity>
 
         <activity android:name=".ParcelableActivity" />
+
+        <activity android:name=".StartActivityForResult" />
     </application>
 
 </manifest>

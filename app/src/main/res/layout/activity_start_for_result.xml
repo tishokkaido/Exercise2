@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -9,10 +8,9 @@
         android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ParcelableActivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        android:text="StartActivityForResult" />
 
     <TextView
         android:id="@+id/text_content"
@@ -20,8 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Parcelableから受け取った値"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_title"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
 
     <TextView
         android:id="@+id/text_name"
@@ -45,20 +42,19 @@
         app:layout_constraintTop_toBottomOf="@id/text_age" />
 
     <Button
-        android:id="@+id/button_start_activity_for_result"
+        android:id="@+id/button_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="STARTACTIVITYFORRESULT"
+        android:text="OK"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_address"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/text_address" />
 
-    <TextView
-        android:id="@+id/text_result"
+    <Button
+        android:id="@+id/button_cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="CANCEL"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_start_activity_for_result" />
+        app:layout_constraintTop_toBottomOf="@id/button_ok" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
